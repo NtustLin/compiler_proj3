@@ -1,0 +1,31 @@
+/* fib.sc
+ *
+ * This test program computes the Nth Fibonacci number
+ */
+
+// variables
+var temp int
+
+func int pow(a int , b int) {
+    var i int
+    var oa int
+    var answer int
+    answer=a
+    oa = a
+    for( i = 1 ; i < b ; i = i + 1){
+       answer = answer * oa
+    } 
+    return answer
+} 
+
+// compute the nth Fibonacci number
+func void main( ) {
+  var p int
+  var d int
+  p=2
+  d=5
+  temp=pow (p,d)
+  
+  println temp
+  return
+}
